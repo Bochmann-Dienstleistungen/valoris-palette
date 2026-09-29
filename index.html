@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VALORIS · Design-Palette</title>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700&family=Bricolage+Grotesque:wght@500;700&family=Cormorant:wght@500;600;700&family=DM+Serif+Display&family=Fraunces:ital,wght@0,500;0,600;1,500&family=Hanken+Grotesk:wght@400;600&family=Inter+Tight:wght@400;600&family=Inter:wght@400;600&family=Libre+Franklin:wght@400;600&family=Manrope:wght@400;700&family=Playfair+Display:wght@600;700&family=Sora:wght@400;700&family=Space+Grotesk:wght@500;700&family=Spectral:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700&family=Bricolage+Grotesque:wght@500;700&family=Cormorant:wght@500;600;700&family=DM+Serif+Display&family=Fraunces:ital,wght@0,500;0,600;1,500&family=Hanken+Grotesk:wght@400;600&family=Inter+Tight:wght@400;600&family=Inter:wght@400;600&family=Libre+Franklin:wght@400;600&family=Manrope:wght@400;700&family=Playfair+Display:wght@600;700&family=Sora:wght@400;700&family=Space+Grotesk:wght@500;700&family=Spectral:wght@500;600;700&family=Syne:wght@600;800&display=swap" rel="stylesheet">
 <style>
   :root{--navy:#0E1A2B;--paper:#F4F2EC;--card:#fff;--ink:#16202E;--ink2:#5A6B82;--line:#E4E0D6;--brass:#C7A35A;--brassd:#A9863C;--shadow:0 14px 40px -18px rgba(14,26,43,.32)}
   *{margin:0;padding:0;box-sizing:border-box}
@@ -108,7 +108,7 @@
 </div>
 
 <script>
-const UPDATED="21.06.2026";
+const UPDATED="02.08.2026";
 /* cat: schrift|hero|layout|anim|bild ; pk: Paket-Tags ; added: Datum (für NEU-Badge) */
 const P=[
  // ---------- SCHRIFT ----------
@@ -176,6 +176,28 @@ const P=[
  {cat:"farbe",name:"Bright Sun × Big Stone",c1:"#FCDB32",n1:"Bright Sun",c2:"#141D38",n2:"Big Stone",pk:["PREMIUM"],branche:"Energie, Bau, Auffällig",added:"2026-06-21"},
  {cat:"farbe",name:"Turquoise × Black",c1:"#34E0A1",n1:"Turquoise",c2:"#000000",n2:"Black",pk:["PREMIUM","INDIVIDUAL"],branche:"Tech, Fintech, Bold",added:"2026-06-21"},
  {cat:"farbe",name:"Periwinkle × Lavender",c1:"#6260FF",n1:"Periwinkle",c2:"#E4E4FF",n2:"Lavender",pk:["PREMIUM"],branche:"SaaS, Kreativ, Jung",added:"2026-06-21"},
+
+ // ---------- Weekly Lab 23.06.2026 (Trends KW26) ----------
+ {cat:"hero",name:"Oversized Type-First",vibe:"Riesige Headline trägt den Hero allein — minimal, selbstbewusst, kein Bild nötig. Klarer 2026-Trend (type-first, weg von zentrierten Templates).",pk:["PREMIUM","INDIVIDUAL"],wf:"typefirst",branche:"Agentur, Marke, B2B, Editorial",added:"2026-06-23"},
+ {cat:"anim",name:"CSS Scroll-Timeline Reveal",vibe:"Scroll-Reveals & Parallax pur in CSS (animation-timeline: view/scroll) — kein JS, federleicht, graceful degradation. Hebt sogar STARTER ohne GSAP-Last.",pk:["STARTER","PREMIUM","INDIVIDUAL"],ic:"🪄",skill:"scroll-css",added:"2026-06-23"},
+ {cat:"anim",name:"Buttery Smooth-Scroll",vibe:"Sanftes, träges Scrollen (GSAP ScrollSmoother) — Agentur-/Luxus-Gefühl. Immer mit prefers-reduced-motion-Ausstieg.",pk:["PREMIUM","INDIVIDUAL"],ic:"🧈",added:"2026-06-23"},
+ {cat:"farbe",name:"Volt × Ink",c1:"#CCFF00",n1:"Volt",c2:"#0B0B0F",n2:"Ink",pk:["PREMIUM","INDIVIDUAL"],branche:"Tech, Sport, Neon-Trend, Bold",added:"2026-06-23"},
+
+ // ---------- Weekly Lab 03.07.2026 (Trends KW27) ----------
+ {cat:"schrift",name:"Charakter-Display",vibe:"Charakterstarke Display-Schrift statt braver Grotesk — Marken-Eigenheit ab der ersten Zeile (Freefaces-Trend).",pk:["PREMIUM","INDIVIDUAL"],fd:"Syne",fb:"Inter",branche:"Agentur, Event, Kreativ, Personal Brand",added:"2026-07-03"},
+ {cat:"hero",name:"Spline 3D-Signature",vibe:"Interaktives 3D-Objekt (Spline) als Signature-Element im Hero — dreh-/reaktionsfähig. Nur lazy-load nach First Paint (Viewer ~2,2 MB), nie flächig.",pk:["INDIVIDUAL"],wf:"spline3d",branche:"Tech, Produkt, Immobilien, Premium",added:"2026-07-03"},
+ {cat:"anim",name:"Distortion-Glass Typo",vibe:"Headline hinter flüssigem Glas — SVG-Displacement verzerrt Text bei Scroll/Hover (Award-Trend, baut auf Liquid-Glass-Kit auf).",pk:["INDIVIDUAL"],ic:"🫧",added:"2026-07-03"},
+ {cat:"bild",name:"Grainy Gradient",vibe:"Körnige, weich verlaufende Farbfelder (Grainient-Stil) — edler Hero-/Section-Hintergrund ganz ohne Foto-Assets.",pk:["PREMIUM","INDIVIDUAL"],ic:"🌾",added:"2026-07-03"},
+
+ // ---------- Dekodiert 02.08.2026 — textildruckzwickau.de (Textilmanufaktur Meischner, gebaut von 4REACH auf OnePage.io) ----------
+ {cat:"hero",name:"Satzbau-Hero (Wort für Wort)",vibe:"Die Headline ist ein ganzer Satz, der sich Wort für Wort aufbaut ('Wir beschaffen und besticken Textilien für Ihr Unternehmen') — dahinter ein riesiges, blasses Echo-Wort. Erklärt das Geschäft in einem Zug, ohne Claim-Floskel.",pk:["STARTER","PREMIUM"],wf:"split",branche:"Handwerk, Manufaktur, B2B-Dienstleistung",added:"2026-08-02"},
+ {cat:"layout",name:"Beweis-Streifen unter Hero",vibe:"Direkt unter dem Hero eine Reihe echter Produkt-/Arbeitsfotos als Laufband — der Besucher sieht in 2 Sekunden, was rauskommt, bevor ein einziger Leistungstext kommt.",pk:["STARTER","PREMIUM"],wf:"fullbleed",branche:"Produkt, Handwerk, Manufaktur, Werbetechnik",added:"2026-08-02"},
+ {cat:"layout",name:"Nummerierter Prozess-Pfad",vibe:"01–04 Schritte: Beratung → Muster/Freigabe → Produktion → Lieferung. Nimmt dem Kunden die Angst vor dem Ablauf und ist der beste Platz für den zweiten CTA.",pk:["STARTER","PREMIUM","INDIVIDUAL"],wf:"center",branche:"Handwerk, Dienstleistung, Bau, Manufaktur",added:"2026-08-02"},
+ {cat:"layout",name:"CTA-Rhythmus (nach jeder Sektion)",vibe:"Ein und derselbe CTA-Block wiederholt sich nach Leistungen, Galerie, Prozess und Referenzen — 4–5× pro Seite. Klingt plump, konvertiert aber deutlich besser als ein CTA ganz unten.",pk:["STARTER","PREMIUM","INDIVIDUAL"],wf:"center",branche:"Alle — besonders Onepager",added:"2026-08-02"},
+ {cat:"anim",name:"Odometer-Ziffernwalze",vibe:"Kennzahlen rollen wie ein Tacho hoch (Ziffernstapel 0–9 pro Stelle) statt simplem Count-Up — deutlich wertiger. Nur mit ECHTEN Zahlen füllen, nie erfundene Counter.",pk:["PREMIUM","INDIVIDUAL"],ic:"🎰",skill:"micro-fx",added:"2026-08-02"},
+ {cat:"bild",name:"Ortsbeweis-Karussell",vibe:"Beschriftete Echtfotos vom eigenen Betrieb (Firmenstandort · Werkstatt · Eingangsbereich · Maschine) als Slider — 'Einblicke in unsere Arbeit'. Stärkster Vertrauensbaustein überhaupt und unschlagbar gegen Stock.",pk:["STARTER","PREMIUM","INDIVIDUAL"],ic:"🏭",branche:"Handwerk, Manufaktur, Gastro, Praxis, Werkstatt",added:"2026-08-02"},
+ {cat:"schrift",name:"Freundlich Regional",vibe:"Runde, zugängliche Grotesk als Display + neutrale Lesetype — wirkt nahbar statt Konzern. Trägt Handwerk/Manufaktur ohne Serifen-Pathos.",pk:["STARTER","PREMIUM"],fd:"Poppins",fb:"Lato",branche:"Handwerk, Manufaktur, Familienbetrieb, Regional",added:"2026-08-02"},
+ {cat:"farbe",name:"Werkstatt-Creme × Signalblau",c1:"#F5F0E6",n1:"Creme",c2:"#008EE7",n2:"Signalblau",pk:["STARTER","PREMIUM"],branche:"Handwerk, Manufaktur, Textil, Regional (Text warm-schwarz #17140E)",added:"2026-08-02"},
 ];
 
 const CATS=[["schrift","Schrift","Display + Body Paarungen"],["hero","Hero-Typen","Der erste Eindruck"],["layout","Layout-Stile","Aufbau & Raster"],["anim","Animationen","Bewegung & Micro-FX"],["bild","Bild-Stil","Bildsprache & Behandlung"],["farbe","Farbwelten","Farb-Kombinationen"]];
@@ -201,7 +223,9 @@ function wf(k){
     fullbleed:"<div class='ph' style='inset:0;border-radius:0'></div><div style='left:0;bottom:0;width:100%;height:30%;background:rgba(14,26,43,.55)'></div>",
     annotated:"<div class='ph' style='left:30%;top:8%;width:40%;bottom:8%'></div><div style='left:60%;top:24%;width:26%;height:8%;background:#fff'></div><div style='left:8%;top:46%;width:26%;height:8%;background:#fff'></div><div style='left:56%;top:68%;width:32%;height:8%;background:#fff'></div>",
     illustr:"<div style='left:10%;top:14%;width:42%;height:9%'></div><div class='ac' style='left:6%;bottom:12%;width:88%;height:30%'></div>",
-    textbehind:"<div style='left:4%;top:22%;width:38%;height:32%'></div><div style='right:4%;top:22%;width:38%;height:32%'></div><div class='ph' style='left:34%;top:10%;width:32%;bottom:6%'></div>"
+    textbehind:"<div style='left:4%;top:22%;width:38%;height:32%'></div><div style='right:4%;top:22%;width:38%;height:32%'></div><div class='ph' style='left:34%;top:10%;width:32%;bottom:6%'></div>",
+    typefirst:"<div style='left:6%;top:22%;width:88%;height:15%'></div><div style='left:6%;top:42%;width:62%;height:15%'></div><div class='ac' style='left:6%;top:72%;width:20%;height:8%'></div>",
+    spline3d:"<div style='left:8%;top:26%;width:36%;height:10%'></div><div style='left:8%;top:42%;width:28%;height:7%'></div><div class='ac' style='right:12%;top:22%;width:26%;height:46%;border-radius:18px;transform:rotate(8deg)'></div>"
   };
   return W+(m[k]||"")+E;
 }
